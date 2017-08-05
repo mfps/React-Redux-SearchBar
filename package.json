@@ -1,0 +1,38 @@
+{
+  "name": "miniWimdu",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "frank wille <f.s.wille@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --devtool dist/",
+    "build:webpack": "webpack --config webpack.config.js",
+    "build": "npm run clean && npm run build:webpack",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "redux": "^3.7.1",
+    "webpack": "^3.1.0",
+    "webpack-dev-middleware": "^1.11.0",
+    "webpack-dev-server": "^2.5.1",
+    "webpack-hot-middleware": "^2.18.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2016": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.4",
+    "eslint": "^4.2.0",
+    "eslint-plugin-babel": "^4.1.1",
+    "eslint-plugin-react": "^7.1.0",
+    "rimraf": "^2.6.1"
+  }
+}
